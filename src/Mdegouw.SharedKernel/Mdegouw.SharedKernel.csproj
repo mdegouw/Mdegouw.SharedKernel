@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Mdegouw.SharedKernel</AssemblyName>
+    <PackageId>Mdegouw.SharedKernel</PackageId>
+    <Title>Mdegouw.SharedKernel</Title>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mathijs de Gouw (@mdegouw)</Authors>
+    <Company>mdegouw.nl</Company>
+    <Description>My own shared kernal package for use within my projects</Description>
+    <Summary>My own shared kernal package for use within my projects</Summary>
+    <PackageProjectUrl>https://github.com/mdegouw/Mdegouw.SharedKernel</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mdegouw/Mdegouw.SharedKernel</RepositoryUrl>
+    <PackageTags>DDD;Shared Kernel;SharedKernel;Domain-Driven Design;Repository;Specification;ValueObject;Value Object;Mdegouw;Clean;Clean Architecture;Clean Architecture Template</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <Version>1.0.0</Version>
+    <PackageReleaseNotes>
+      * Updated packages
+    </PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <DocumentationFile>bin\$(Configuration)\Mdegouw.SharedKernel.xml</DocumentationFile>    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.GuardClauses" />
+    <PackageReference Include="Ardalis.Specification" />
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NoWarn>1701;1702;1591;1573;1712</NoWarn>
+  </PropertyGroup>
+
+
+</Project>
